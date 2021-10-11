@@ -38,7 +38,7 @@ export function Logo() {
       <Image>
         <img src={CarlogoImg} />
       </Image>
-      <LogoText>Yourcar</LogoText>
+      <LogoText>Rent For You</LogoText>
     </LogoContainer>
   );
 }
