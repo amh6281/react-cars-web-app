@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import MclarenCarImg from "../../../assets/images/mclaren-orange-big.png";
 import BlobImg from "../../../assets/images/blob.svg";
 import { SCREENS } from "../../components/responsive";
+import { Button } from "../../components/button";
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -123,11 +124,20 @@ const StandaloneCar = styled.div`
   }
 `;
 
+const ButtonsContainer = styled.div`
+  ${tw`
+    flex`}
+`;
+
 export function TopSection() {
   return (
     <TopSectionContainer>
       <LeftContainer>
         <Slogan>Rent The Best Qulity Car's With Us</Slogan>
+        <ButtonsContainer>
+          <Button text="예약하기" />
+          <Button theme="filled" text="내 차 팔기" />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
