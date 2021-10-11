@@ -7,6 +7,7 @@ import { Navbar } from "../../components/navbar";
 import { AboutUs } from "./aboutUs";
 import { BookingSteps } from "./bookingSteps";
 import { TopSection } from "./topSection";
+import { TopCars } from "./topCars";
 
 const PageContainer = styled.div`
   ${tw`
@@ -31,6 +32,7 @@ export function HomePage() {
       <Marginer direction="vertical" margin="8em" />
       <AboutUs />
       <Marginer direction="vertical" margin="8em" />
+      <TopCars />
     </PageContainer>
   );
 }
